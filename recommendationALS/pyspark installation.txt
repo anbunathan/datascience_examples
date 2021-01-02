@@ -1,0 +1,49 @@
+Install pysark
+Open cmd window with admin previlage
+pip install pyspark==3.0.0
+or
+pip install https://github.com/pyinstaller/pyinstaller/archive/develop.zip
+
+download and install spark 3.0.0 in d://spark
+spark-3.0.0-bin-hadoop2.7.tgz
+
+Environment variables
+spark3.0.0
+SPARK_HOME = D:\spark3.0.0
+PYTHONPATH = %SPARK_HOME%\python;%SPARK_HOME%\python\lib\py4j-0.10.9-src.zip:%PYTHONPATH%
+HADOOP_HOME = D:\hadoop
+JAVA_HOME = C:\Progra~2\Java\jre1.8.0_251
+
+Download winutils for 2.7.1 and keep under d://hadoop/bin
+http://github.com/steveloughran/winutils/raw/master/hadoop-2.7.0/bin/winutils.exe
+
+pycharm->settings->Project Structure
++ Add content Root
+D:\spark3.0.0\python
+D:\spark3.0.0\python\lib\py4j-0.10.9-src.zip
+Remove other spark entries like D:\spark2.3.3\python
+
+Reference
+https://medium.com/@oguzkircicek/pyspark-i%CC%87nstallation-windows-10-how-to-solve-illegalargumentexception-c12a1c5a4cad
+https://towardsdatascience.com/installing-apache-pyspark-on-windows-10-f5f0c506bea1
+
+Troubleshoot
+    return types.CodeType( TypeError: an integer is required (got type bytes)
+
+Exception happened during processing of request from ('127.0.0.1', 52393)
+py4j.protocol.Py4JNetworkError: Error while sending
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+Not required
+spark2.4.6
+SPARK_HOME = D:\spark\spark-2.4.6-bin-hadoop2.7
+PYTHONPATH = %SPARK_HOME%\python;%SPARK_HOME%\python\lib\py4j-0.10.7-src.zip:%PYTHONPATH%
+HADOOP_HOME = D:\hadoop
+JAVA_HOME = C:\Progra~2\Java\jre1.8.0_251
+
+spark2.3.3
+SPARK_HOME = D:\BigData\spark
+PYTHONPATH = %SPARK_HOME%\python;%SPARK_HOME%\python\lib\py4j-0.10.7-src.zip:%PYTHONPATH%
+HADOOP_HOME = D:\hadoop
+JAVA_HOME = C:\Progra~2\Java\jre1.8.0_251
