@@ -1,0 +1,26 @@
+Exercises
+1. Load pokemon.csv, plot correlation and heat map
+2. From pokemon.csv, explore line plot, scatter plot, histogram
+3. Add, remove,clear elements in a python dictionary
+4. From pokemon.csv data, realize filters using Python controls/logics
+5. From pokemon.csv data, realize iterators to display dictionary elements
+6. Realize user defined, lambda, anaonymous functions in Python
+7. From pokemon.csv data, Realize zip, list comprehension for high/low speed
+8. Using pokemon.csv data, realize the following data cleaning activities
+	Ignore null entries
+	Melt tidy data,	Create pivot
+	Concatenate, Convert datatypes,	drop nan values
+9. Using pokemom.csv data, visualize sub-plots, histogram with cumulative and non-cumulative
+10. Using pokemon.csv data, realize the following data tranformation activities
+	Indexing, Hierarchical indexing
+	Slicing, Reverse slicing
+	Filtering, Combining filters
+11. Using pokemon.csv data, realize the following data aggregation activities
+	Using GroupBy
+	Mean, Min, Max
+12. Using pokemon.csv, realize the following data transformation/aggregation activities
+	stack, unstack
+13. Using Tableau, create interactive charts, map, top-N filters, dash board and 
+	share  (Refer Tableau public tutorial file)
+
+

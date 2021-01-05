@@ -65,7 +65,7 @@ with g.as_default():
     sess = tf.Session()
     sess.run(tf.initialize_all_variables())
 
-    for i in range(5000):
+    for i in range(700):
         batch = mnist.train.next_batch(50)
         if i % 100 == 0:
             train_accuracy = accuracy.eval(

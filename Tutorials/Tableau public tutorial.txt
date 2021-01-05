@@ -1,0 +1,75 @@
+1. Download dataset “Cellphone Subscriptions - World Bank” from
+http://csci-4830-002-2014.github.io/units/tableau_1/
+2. Open Tableau public app
+	Open the above XLS
+3. Goto worksheet
+	Observe Country code, country name, Income group, Long name, Region are displayed under Dimensions
+	Observe Cellphones, Lattitude, Longitude, Number of records are displayed under Measures
+4. Select country name from Dimensions
+	Select Symbol maps under 'Show me'
+	Observe Lattitude, Longitude are automatically selected
+	Now map will appear
+5. Select Cellphones under Measures. Drag & drop on Colour under Marks
+	Now different contries are displayed different colors
+	Click on Colors->Edit colors->Select Green color
+	Observe countries are displayed with Green shaded
+6. Select Marks-> Drop down menu
+	Different Marks types are displayed
+	Select circle
+	Select Colors->Edit colors->Select Red-Blue diverging color
+7. Hide Show me menu
+	Select Region. From drop down select Show filter
+	Observe different regions are selected in right side pane
+	Uncheck all regions except East Asia & Pacific
+	Try to Modify filter type from drop down list from multi values list to different one
+8. Create a new view (new worksheet) by clicking 'New worksheet' (+) symbol at the bottom
+	Select Year and drop in columns
+	Select Cellphones and drop in rows
+	Observe a line chart appears
+	This can be changed by selecting different marks type such as 'Bar' or 'Area' etc
+	Undo and stay with line chart
+	Hover over line and observe how data is aggregated for each year data point
+9. For more detailed data view
+	Select Income group and drop on Color (under Marks)
+	Observe different colored lines are appearing for each income group
+	To observe data region wise, simply drag Region and drop over Income group (under Marks)
+	Observe different colored lines are appearing for each region
+	Thickness of the lines can be adjusted by changing the 'Size' slider (under Marks)
+10. Line chart shows aggregated data for each country
+	By default 'Sum' is the aggregate function
+	Change this clicking drop down list of SUM(Cellphones) under Rows
+	Select Measure(Sum) and then change to Avergae or Count or Median etc
+	Undo and stay with Average
+	Drag Country name onto Detail (under Marks) to view countrywise average
+11. To display regionwise line charts:
+	Drag Region to Rows section
+	observe line charts are displayed regionwise
+12. Observe Years are displayed from 1965 to 2011
+	Add a Year filter
+	Drag Year from Dimensions and drop onto 'Filter' shelf
+	Filter Field window opens
+	Select Range of dates
+	Select start year to 1990, Apply, OK
+	Observe now data showing from 1990
+13. Rename Sheets 1 and 2 to Map and Region
+	Create a Dashboard to combine these two sheets
+	Click on 'New Dashboard' at the bottom
+	Now from left pane double click 'Map' worksheet to add into Dashboard
+	Observe Map is appearing under Dashboard
+	Drag Region and drop under Map
+14. Add a text in the Dashboard
+	Drag Text from left pane and drop on top of Map sheet
+	Type Worldwide Cellphone Subscription
+	Format by changing Fon type, size, bold, center align and click OK
+	Resize the Text box
+	Make Region filter as floating window by clicking dropdown->floating
+	Resize Region filter
+15. Hide worksheet titles by right clicking the worksheet and click on 'Hide'
+	Right click Region filter and select 'Apply to Worksheets' -> All using this data source
+16. Save this Dashboard to the web
+	File->Save to Tableau Public as 
+	Enter Email id and Password
+	Enter workbook name as 'Worldwide Cellphone Subscription' and click Save button
+	Observe browser is getting opened and Dashboard is getting displayed
+17. The visualization can be shared from browser to social media or other website
+	Click on share button. Observe Facebook and Tweeter

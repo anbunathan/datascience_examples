@@ -23,6 +23,13 @@ D:\spark3.0.0\python
 D:\spark3.0.0\python\lib\py4j-0.10.9-src.zip
 Remove other spark entries like D:\spark2.3.3\python
 
+Run/Debug configuration in PyCharm
+Main menu->Run->Edit configuration->Select SparkALS.py->Environment variables
+Add the following
+SPARK_HOME = D:\spark3.0.0
+PYSPARK_PYTHON = C:\Python38\python
+PYSPARK_DRIVER_PYTHON = C:\Python38\python
+
 Reference
 https://medium.com/@oguzkircicek/pyspark-i%CC%87nstallation-windows-10-how-to-solve-illegalargumentexception-c12a1c5a4cad
 https://towardsdatascience.com/installing-apache-pyspark-on-windows-10-f5f0c506bea1

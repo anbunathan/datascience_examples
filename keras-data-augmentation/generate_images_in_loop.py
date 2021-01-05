@@ -26,14 +26,15 @@ for filename in os.listdir(directory):
 		image = np.expand_dims(image, axis=0)
 		# construct the image generator for data augmentation then
 		# initialize the total number of images generated thus far
+		# https://keras.io/api/preprocessing/image/
 		aug = ImageDataGenerator(
-			rotation_range=30,
-			zoom_range=0.15,
+			rotation_range=30, #Int. Degree range for random rotations.(-40,40)
+			zoom_range=0.15, #Float or [lower, upper]. Range for random zoom. If a float, [lower, upper] = [1-zoom_range, 1+zoom_range].
 			width_shift_range=0.2,
 			height_shift_range=0.2,
-			shear_range=0.15,
+			shear_range=0.15, #Float. Shear Intensity (Shear angle in counter-clockwise direction in degrees)
 			horizontal_flip=True,
-			fill_mode="nearest")
+			fill_mode="nearest") #Points outside the boundaries of the input are filled according to the given mode
 		total = 0
 		# construct the actual Python generator
 		print("[INFO] generating images...")
